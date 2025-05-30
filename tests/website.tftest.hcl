@@ -7,6 +7,8 @@ run "setup_tests" {
 
 # Apply run block to create the bucket
 run "create_bucket" {
+  command = apply
+
   variables {
     bucket_name = "${run.setup_tests.bucket_prefix}-aws-s3-website-test"
   }
