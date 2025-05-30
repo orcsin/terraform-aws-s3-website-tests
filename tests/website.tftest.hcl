@@ -48,3 +48,4 @@ run "website_is_running" {
     error_message = "Website responded with HTTP status ${data.http.index.status_code}"
   }
 }
+
